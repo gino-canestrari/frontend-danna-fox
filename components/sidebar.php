@@ -16,7 +16,7 @@
       </li>
       
       <li class="sidebar-item">
-        <a class="link" href="#add">
+        <a class="link nav-link" href="#add">
           <i class='bx bx-message-square-add'></i>
         </a>
       </li>

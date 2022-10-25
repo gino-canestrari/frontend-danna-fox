@@ -19,8 +19,9 @@
   <title>Danna Fox - Campañas</title>
 </head>
 <body>
-  
-  <?php include('./components/sidebar.php') ?>
-
+  <main class="main-box -flex">
+    <?php include('./components/sidebar.php') ?>
+    <?php include('./components/content.php') ?>
+  </main>
 </body>
 </html>

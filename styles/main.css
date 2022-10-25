@@ -1,0 +1,84 @@
+/* ------------------------------------------------------ */
+/*                      Variables CSS                     */
+/* ------------------------------------------------------ */
+
+:root {
+  --clr-primary-d: hsl(0, 0%, 5%);
+  --clr-primary-n: hsl(0, 0%, 15%);
+  --clr-primary-l: hsl(0, 0%, 25%);
+
+  --clr-neutral-d: hsla(0, 0%, 80%);
+  --clr-neutral-n: hsla(0, 0%, 90%);
+  --clr-neutral-l: hsla(0, 0%, 100%);
+}
+
+/* ------------------------------------------------------ */
+/*                         Sidebar                        */
+/* ------------------------------------------------------ */
+
+.sidebar-box {
+  padding: 1.5rem;
+  background: var(--clr-neutral-n);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  width: 6rem;
+  gap: 1.5rem;
+  border-right: thin solid gray;
+}
+
+.sidebar-header > .logo {
+  font-size: 4rem;
+  color: var(--clr-primary-n);
+}
+
+.sidebar-header > .logo:hover {
+  color: var(--clr-primary-n);
+}
+
+.sidebar-nav {
+  width: 100%;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background: #2c2c2c22;
+  border-radius: 0.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.sidebar-item.-active {
+  background: var(--clr-primary-n);
+}
+
+.sidebar-item.-active > .link {
+  color: var(--clr-neutral-n);
+}
+
+.sidebar-item > .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  color: var(--clr-primary-n);
+  line-height: 0;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}

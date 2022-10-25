@@ -7,7 +7,7 @@
     </a>
   </div>
 
-  <nav class="sidebar-nav">
+  <nav class="sidebar-body">
     <ul class="sidebar-list">
       <li class="sidebar-item -active">
         <a class="link" href="#home">

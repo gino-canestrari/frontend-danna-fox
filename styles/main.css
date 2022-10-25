@@ -40,21 +40,13 @@ html {
 }
 
 /* ------------------------------------------------------ */
-/*                          Utils                         */
-/* ------------------------------------------------------ */
-
-.flex,
-.-flex {
-  display: flex;
-}
-
-/* ------------------------------------------------------ */
 /*                          Main                          */
 /* ------------------------------------------------------ */
 
 .main-box {
   width: 100%;
   max-height: 100vh;
+  display: flex;
 }
 
 /* ------------------------------------------------------ */
@@ -244,6 +236,7 @@ html {
 .campaign-tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -251,6 +244,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   gap: 0.5rem;
   line-height: 0;
   color: var(--clr-primary-n);

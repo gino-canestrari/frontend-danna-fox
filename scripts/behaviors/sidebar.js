@@ -1,29 +1,19 @@
 
-const $items = document.querySelectorAll('.sidebar-item')
-const $contents = document.querySelectorAll('.content-box')
+const $list = document.querySelector('.sidebar-list')
 
-$items.forEach((item, index) => {
-  item.addEventListener('click', (event) => {
-    if (event.target.matches('.sidebar-item')) {
-      document.querySelector('.sidebar-item.-active').classList.remove('-active')
-      document.querySelector('.content-box.-active').classList.remove('-active')
-      event.target.classList.toggle('-active')
-      $contents[index].classList.toggle('-active')
-    }
+$list.addEventListener('click', (event) => {
+  if (event.target.matches('.sidebar-item')) {
 
-    if (event.target.matches('.link')) {
-      document.querySelector('.sidebar-item.-active').classList.remove('-active')
-      document.querySelector('.content-box.-active').classList.remove('-active')
-      event.target.parentNode.classList.toggle('-active')
-      $contents[index].classList.toggle('-active')
-    }
+    /* Remove active class to previous elements */
+    document.querySelector('.sidebar-item.-active').classList.remove('-active')
+    document.querySelector('.content-box.-active').classList.remove('-active')
     
-    if (event.target.matches('.bx')) {
-      document.querySelector('.sidebar-item.-active').classList.remove('-active')
-      document.querySelector('.content-box.-active').classList.remove('-active')
-      event.target.parentNode.parentNode.classList.toggle('-active')
-      $contents[index].classList.toggle('-active')
-    }
+    /* Get the target content from data-target attribute of sidebar items */
+    const target = event.target.getAttribute('data-target')
 
-  })
+    /* Add active class to current elements */
+    event.target.classList.toggle('-active')
+    document.querySelector(target).classList.toggle('-active')
+    
+  }
 })

@@ -130,6 +130,7 @@ html {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  pointer-events: none;
   cursor: default;
 }
 

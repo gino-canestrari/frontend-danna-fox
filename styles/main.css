@@ -260,9 +260,14 @@ html {
 }
 
 .campaign-right {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.campaign-right > .icon > .bx {
+  pointer-events: none;
 }
 
 .campaign-right > .icon {
@@ -278,4 +283,45 @@ html {
 
 .campaign-right > .icon:hover {
   background: hsla(0, 0%, 30%, 0.2);
+}
+
+.campaign-right > .campaign-menu {
+  position: absolute;
+  right: 120%;
+  top: 10%;
+}
+
+.campaign-menu {
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.3rem;
+  padding: 0.6rem;
+  background: var(--clr-neutral-n);
+  box-shadow: 0 0 10px hsla(0, 0%, 15%, 0.5);
+  border-radius: 0.5rem;
+  z-index: 100;
+}
+
+.campaign-menu.-opened {
+  display: flex;
+}
+
+.campaign-menu > .button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  background: var(--clr-primary-n);
+  width: 100%;
+  text-align: left;
+  border-radius: 0.4rem;
+  border: none;
+  padding-inline: 0.8rem;
+  padding-block: 0.2rem;
+}
+
+.campaign-menu > .button:hover {
+  background: var(--clr-primary-l);
 }

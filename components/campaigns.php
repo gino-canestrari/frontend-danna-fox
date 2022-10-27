@@ -27,6 +27,20 @@
     <span class="icon">
       <i class='bx bx-dots-vertical-rounded'></i>
     </span>
+
+    <div class="campaign-menu" data-campaign="0">
+      <button class="button">
+        <i class='bx bx-show'></i> Ver
+      </button>
+      
+      <button class="button">
+        <i class='bx bxs-edit'></i> Editar
+      </button>
+      
+      <button class="button">
+        <i class='bx bx-x-circle'></i> Eliminar
+      </button>
+    </div>
   </div>
 </div>
 
@@ -58,6 +72,20 @@
     <span class="icon">
       <i class='bx bx-dots-vertical-rounded'></i>
     </span>
+
+    <div class="campaign-menu" data-campaign="1">
+      <button class="button">
+        <i class='bx bx-show'></i> Ver
+      </button>
+      
+      <button class="button">
+        <i class='bx bxs-edit'></i> Editar
+      </button>
+      
+      <button class="button">
+        <i class='bx bx-x-circle'></i> Eliminar
+      </button>
+    </div>
   </div>
 </div>
 
@@ -89,5 +117,19 @@
     <span class="icon">
       <i class='bx bx-dots-vertical-rounded'></i>
     </span>
+
+    <div class="campaign-menu" data-campaign="2">
+      <button class="button">
+        <i class='bx bx-show'></i> Ver
+      </button>
+      
+      <button class="button">
+        <i class='bx bxs-edit'></i> Editar
+      </button>
+      
+      <button class="button">
+        <i class='bx bx-x-circle'></i> Eliminar
+      </button>
+    </div>
   </div>
 </div>

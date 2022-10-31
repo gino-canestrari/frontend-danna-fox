@@ -1,0 +1,26 @@
+{
+  "name": "gino/frontend-danna-fox",
+  "description": "A simple campaign manager system.",
+  "type": "project",
+  "require": {
+    "vlucas/phpdotenv": "5.5",
+    "doctrine/orm": "2.13",
+    "symfony/cache": "6.1",
+    "doctrine/annotations": "1.13"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Models\\": "src/Models/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Gino",
+      "email": "gcanestrari@alumnos.unsada.edu.ar"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  }
+}

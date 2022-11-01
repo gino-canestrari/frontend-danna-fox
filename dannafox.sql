@@ -45,7 +45,9 @@ INSERT INTO `localidad` VALUES
 
 CREATE TABLE `telefono` (
   `id` int(11) NOT NULL,
-  `localidad_id` int(11) DEFAULT NULL
+  `localidad_id` int(11) DEFAULT NULL,
+  `nombre` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `numero` varchar(30) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 

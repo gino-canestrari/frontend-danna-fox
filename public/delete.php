@@ -9,7 +9,11 @@ $em = GetEntityManager();
 
 if (isset($_GET['id'])) {
   $campaign = $em->find('Models\Campaign', $_GET['id']);
+  $client = $campaign->getCliente();
+
+  $em->remove($client);
   $em->remove($campaign);
+
   $em->flush();
   header('Location: ../');
 } else {

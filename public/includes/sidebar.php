@@ -16,7 +16,19 @@
 
       <li class="sidebar-item" data-target="#add-campaign">
         <a class="link">
-          <i class='bx bx-message-square-add'></i>
+          <i class='bx bx-plus-circle'></i>
+        </a>
+      </li>
+
+      <li class="sidebar-item" data-target="#show-campaign">
+        <a class="link">
+          <i class='bx bx-show'></i>
+        </a>
+      </li>
+
+      <li class="sidebar-item" data-target="#edit-campaign">
+        <a class="link">
+          <i class='bx bx-pencil'></i>
         </a>
       </li>
     </ul>

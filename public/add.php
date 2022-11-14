@@ -22,19 +22,27 @@ if (isset($_POST['submit'])) {
   }
 
   $client = new Client();
-  $client->setNombre($_POST['nombre']);
-  $client->setApellido($_POST['apellido']);
-  $client->setCuilCuit($_POST['cuitcuil']);
-  $client->setTelefono($_POST['telefono']);
-  $client->setEmail($_POST['email']);
-  $client->setRazonSocial($_POST['razon_social']);
-
   $campaign = new Campaign();
+
+  $existingClient = $em->getRepository('Models\Client')->findOneBy(['cuilcuit' => $_POST['cuitcuil']]);
+
+  if (isset($existingClient)) {
+    echo "Ya existe un cliente con ese Cuil/Cuit";
+    return;
+  } else {
+    $client->setNombre($_POST['nombre']);
+    $client->setApellido($_POST['apellido']);
+    $client->setCuilCuit($_POST['cuitcuil']);
+    $client->setTelefono($_POST['telefono']);
+    $client->setEmail($_POST['email']);
+    $client->setRazonSocial($_POST['razon_social']);
+    $campaign->setCliente($client);
+  }
+
   $campaign->setNombre($_POST['nombre_campania']);
   $campaign->setTexto($_POST['text']);
   $campaign->setCantidadMensajes($_POST['cantidad_mensajes']);
   $campaign->setEstado('CREADA');
-  $campaign->setCliente($client);
 
   $em->persist($campaign);
   $em->flush();

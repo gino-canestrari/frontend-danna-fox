@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Scripts -->
-  <script defer src="./public/scripts/main.js" type="module"></script>
+  <script async defer src="./public/scripts/main.js" type="module"></script>
   <!-- Favicon -->
   <link rel="shortcut icon" href="./resources/favicon.svg" type="image/x-icon">
   <!-- Bootstrap -->

@@ -16,9 +16,9 @@ Este es un frontend realizado para la materia Laboratorio de Lenguajes, en la cu
 
 Por consiguiente, este repositorio contará con la parte de diseño, maquetado y funcionalidad del proyecto. Este deberá conectarse a la base de datos desarrollada por los demás integrantes del grupo encargados de esa área.
 
-### Mockup Aplicación
+### Screenshot Aplicación
 
-![Danna Fox Mockup](./resources/mockup.png)
+![Danna Fox Mockup](./resources/screenshot.png)
 
 ## Tecnologías
 

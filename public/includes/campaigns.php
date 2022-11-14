@@ -1,6 +1,6 @@
 <?php
 
-$campaigns = $em->getRepository('Models\Campaign')->findAll();
+$campaigns = $em->getRepository('Models\Campaign')->findBy([], ['id' => 'DESC']);
 
 foreach ($campaigns as $campaign) {
   switch ($campaign->getEstado()) {
@@ -35,15 +35,15 @@ foreach ($campaigns as $campaign) {
             </span>
 
             <div class='campaign-menu' data-campaign='{$campaign->getId()}'>
-              <a class='button' href='./public/show.php?id={$campaign->getId()}'>
+              <a class='button' href='?id={$campaign->getId()}' data-target='#show-campaign'>
                 <i class='bx bx-show'></i> Ver
               </a>
 
-              <a class='button' href='./public/edit.php?id={$campaign->getId()}'>
-                <i class='bx bxs-edit'></i> Editar
+              <a class='button' href='?id={$campaign->getId()}' data-target='#edit-campaign'>
+                <i class='bx bx-pencil'></i> Editar
               </a>
 
-              <a class='button' href='./public/delete.php?id={$campaign->getId()}'>
+              <a class='button' href='./public/delete.php?id={$campaign->getId()}' data-target='#home'>
                 <i class='bx bx-x-circle'></i> Eliminar
               </a>
             </div>
@@ -82,15 +82,15 @@ foreach ($campaigns as $campaign) {
             </span>
 
             <div class='campaign-menu' data-campaign='{$campaign->getId()}'>
-              <a class='button' href='./public/show.php?id={$campaign->getId()}'>
+              <a class='button' href='?id={$campaign->getId()}' data-target='#show-campaign'>
                 <i class='bx bx-show'></i> Ver
               </a>
 
-              <a class='button' href='./public/edit.php?id={$campaign->getId()}'>
-                <i class='bx bxs-edit'></i> Editar
+              <a class='button' href='?id={$campaign->getId()}' data-target='#edit-campaign'>
+                <i class='bx bx-pencil'></i> Editar
               </a>
 
-              <a class='button' href='./public/delete.php?id={$campaign->getId()}'>
+              <a class='button' href='./public/delete.php?id={$campaign->getId()}' data-target='#home'>
                 <i class='bx bx-x-circle'></i> Eliminar
               </a>
             </div>
@@ -129,15 +129,15 @@ foreach ($campaigns as $campaign) {
             </span>
 
             <div class='campaign-menu' data-campaign='{$campaign->getId()}'>
-              <a class='button' href='./public/show.php?id={$campaign->getId()}'>
+              <a class='button' href='?id={$campaign->getId()}' data-target='#show-campaign'>
                 <i class='bx bx-show'></i> Ver
               </a>
 
-              <a class='button' href='./public/edit.php?id={$campaign->getId()}'>
-                <i class='bx bxs-edit'></i> Editar
+              <a class='button' href='?id={$campaign->getId()}' data-target='#edit-campaign'>
+                <i class='bx bx-pencil'></i> Editar
               </a>
 
-              <a class='button' href='./public/delete.php?id={$campaign->getId()}'>
+              <a class='button' href='./public/delete.php?id={$campaign->getId()}' data-target='#home'>
                 <i class='bx bx-x-circle'></i> Eliminar
               </a>
             </div>

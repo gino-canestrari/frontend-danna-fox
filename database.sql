@@ -6,7 +6,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
-
 CREATE TABLE `campania` (
   `id` int(11) NOT NULL,
   `cliente_id` int(11) DEFAULT NULL,
@@ -38,11 +37,6 @@ CREATE TABLE `localidad` (
   `codigo_area` varchar(4) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `localidad` VALUES
-(1, 'Campana', '3329'),
-(2, 'Baradero', '3329'),
-(3, 'Zarate', '3329');
-
 CREATE TABLE `telefono` (
   `id` int(11) NOT NULL,
   `localidad_id` int(11) DEFAULT NULL,
@@ -71,7 +65,7 @@ ALTER TABLE `telefono`
   ADD UNIQUE KEY `UNIQ_C1E70A7F67707C89` (`localidad_id`);
 
 ALTER TABLE `localidad`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 ALTER TABLE `campania`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;

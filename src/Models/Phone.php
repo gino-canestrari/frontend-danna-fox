@@ -29,8 +29,7 @@ class Phone
   private string $numero;
 
   /**
-   * One Phone has One Locality.
-   * @ORM\OneToOne(targetEntity="Locality", cascade={"persist"})
+   * @ORM\ManyToOne(targetEntity="Locality", inversedBy="telefonos", cascade={"persist"})
    * @ORM\JoinColumn(name="localidad_id", referencedColumnName="id")
    */
   private Locality|null $cliente = null;

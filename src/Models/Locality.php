@@ -2,6 +2,7 @@
 
 namespace Models;
 
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -26,6 +27,12 @@ class Locality
    * @ORM\Column(name="codigo_area", type="string", length=4)
    */
   private string $codigoArea;
+
+  /**
+   * @ORM\OneToMany(targetEntity="Phone", mappedBy="cliente")
+   * @var Collection<int, Phone>
+   */
+  private Collection $telefonos;
 
   public function getId(): int|null
   {
